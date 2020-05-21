@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SharedActivity">
+
+    <LinearLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/card_main_bg"
+        android:orientation="vertical"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="169dp"
+            android:layout_height="140dp"
+            android:transitionName="imageTransition"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="122dp"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/person" />
+
+        <TextView
+            android:id="@+id/profilename"
+            android:layout_width="314dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@+id/imageView2"
+            android:fontFamily="casual"
+            android:transitionName="imageTransition"
+            android:gravity="center"
+            android:lineSpacingExtra="18sp"
+            android:text="John Holand"
+            android:textColor="@android:color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:transitionName="imageTransition"
+            android:textColor="@android:color/black"
+            android:layout_width="306dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profilename"
+            android:layout_alignStart="@+id/profilename"
+            android:layout_alignEnd="@+id/profilename"
+            android:layout_gravity="center"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+            android:gravity="center_horizontal"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
